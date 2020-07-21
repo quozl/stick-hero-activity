@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
 # Stick Hero
@@ -49,9 +48,9 @@ class game:
 
         try:
             pygame.mixer.init()
-        except Exception, err:
+        except Exception as err:
             sound = False
-            print 'error with sound', err
+            print('error with sound', err)
 
         black = (0, 0, 0)
         white = (255, 255, 255)
